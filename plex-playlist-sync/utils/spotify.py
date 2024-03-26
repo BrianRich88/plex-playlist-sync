@@ -28,7 +28,7 @@ def _get_sp_user_playlists(
             playlists.append(
                 Playlist(
                     id=playlist["uri"],
-                    name=playlist["name"] + suffix,
+                    name=playlist["name"],
                     description=playlist.get("description", ""),
                     # playlists may not have a poster in such cases return ""
                     poster=""
