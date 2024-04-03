@@ -3,7 +3,7 @@ version: "2.1"
 services:
   playlistSync:
     image: BrianRich88/plexplaylistsync:latest
-    container_name: playlistSync
+    container_name: brianplaylistSync
     # optional only if you chose WRITE_MISSING_AS_CSV=1 in env
     volumes:
       - <Path where you want to write missing tracks>:/data
