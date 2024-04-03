@@ -99,7 +99,7 @@ def spotify_playlist_sync(
     playlists = _get_sp_user_playlists(
         sp,
         userInputs.spotify_user_id,
-        " - Spotify" if userInputs.append_service_suffix else "",
+        "" if userInputs.append_service_suffix else "",
     )
     if playlists:
         for playlist in playlists:
